@@ -13,6 +13,7 @@ def sourceToSink(source, sink, transactions):
 
     flow_value, flow_dict = nx.maximum_flow(G, source, sink)
 
+    #returns an integer, the actual money transferred from person A to person B
     return flow_value
 
 print(sourceToSink("3456789012", "0987654321", sampleData.transactions))
